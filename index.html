@@ -130,12 +130,15 @@ h1 span { display: block; }
 }
 .degrees p { margin: 0; }
 
-.languages {
-  margin: 1rem 0 0;
+.facts {
+  display: grid;
+  gap: 0.4rem;
+  margin-top: 1rem;
   color: var(--muted);
   font-size: 1rem;
   line-height: 1.45;
 }
+.facts p { margin: 0; }
 
 .profiles {
   display: flex;
@@ -177,6 +180,12 @@ a:focus-visible {
   .profiles { margin-top: 2rem; }
 }
 </style>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Person", "name": "Janir Ramos da Cruz", "url": "https://janirramosdacruz.cv/",
+ "jobTitle": "Medical device systems engineer and clinical program lead",
+ "address": {"@type": "PostalAddress", "addressLocality": "Morges", "addressCountry": "CH"},
+ "sameAs": ["https://www.linkedin.com/in/janir-ramos-da-cruz/", "https://scholar.google.com/citations?user=hBsoszQAAAAJ", "https://orcid.org/0000-0001-7029-5092"]}
+</script>
 </head>
 <body>
 <main>
@@ -194,11 +203,15 @@ a:focus-visible {
       <p>CAS Management in Life Sciences, EPFL.</p>
     </div>
 
-    <p class="languages">English, French, Portuguese, Spanish, <span class="nowrap">Cabo Verdean Creole.</span></p>
+    <div class="facts">
+      <p>Based in Morges, Switzerland.</p>
+      <p>English, French, Portuguese, Spanish, <span class="nowrap">Cabo Verdean Creole.</span></p>
+    </div>
 
     <ul class="profiles">
       <li><a href="https://www.linkedin.com/in/janir-ramos-da-cruz/">LinkedIn</a></li>
       <li><a href="https://scholar.google.com/citations?user=hBsoszQAAAAJ">Google Scholar</a></li>
+      <li><a href="https://orcid.org/0000-0001-7029-5092">ORCID</a></li>
     </ul>
   </div>
 </main>
